@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="libass\ass.h" />
+    <ClInclude Include="libass\ass_bitmap.h" />
+    <ClInclude Include="libass\ass_cache.h" />
+    <ClInclude Include="libass\ass_cache_template.h" />
+    <ClInclude Include="libass\ass_compat.h" />
+    <ClInclude Include="libass\ass_directwrite.h" />
+    <ClInclude Include="libass\ass_drawing.h" />
+    <ClInclude Include="libass\ass_font.h" />
+    <ClInclude Include="libass\ass_fontconfig.h" />
+    <ClInclude Include="libass\ass_fontselect.h" />
+    <ClInclude Include="libass\ass_func_template.h" />
+    <ClInclude Include="libass\ass_library.h" />
+    <ClInclude Include="libass\ass_parse.h" />
+    <ClInclude Include="libass\ass_rasterizer.h" />
+    <ClInclude Include="libass\ass_render.h" />
+    <ClInclude Include="libass\ass_shaper.h" />
+    <ClInclude Include="libass\ass_string.h" />
+    <ClInclude Include="libass\ass_types.h" />
+    <ClInclude Include="libass\ass_utils.h" />
+    <ClInclude Include="libass\dwrite_c.h" />
+    <ClInclude Include="libass\x86\cpuid.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libass\x86\be_blur.asm" />
+    <None Include="libass\x86\blend_bitmaps.asm" />
+    <None Include="libass\x86\blur.asm" />
+    <None Include="libass\x86\cpuid.asm" />
+    <None Include="libass\x86\rasterizer.asm" />
+    <None Include="libass\x86\utils.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libass\ass.c" />
+    <ClCompile Include="libass\ass_bitmap.c" />
+    <ClCompile Include="libass\ass_blur.c" />
+    <ClCompile Include="libass\ass_cache.c" />
+    <ClCompile Include="libass\ass_directwrite.c" />
+    <ClCompile Include="libass\ass_drawing.c" />
+    <ClCompile Include="libass\ass_font.c" />
+    <ClCompile Include="libass\ass_fontconfig.c" />
+    <ClCompile Include="libass\ass_fontselect.c" />
+    <ClCompile Include="libass\ass_library.c" />
+    <ClCompile Include="libass\ass_parse.c" />
+    <ClCompile Include="libass\ass_rasterizer.c" />
+    <ClCompile Include="libass\ass_rasterizer_c.c" />
+    <ClCompile Include="libass\ass_render.c" />
+    <ClCompile Include="libass\ass_render_api.c" />
+    <ClCompile Include="libass\ass_shaper.c" />
+    <ClCompile Include="libass\ass_string.c" />
+    <ClCompile Include="libass\ass_strtod.c" />
+    <ClCompile Include="libass\ass_utils.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A78DCBC4-077B-4884-A7F4-D9AF70EDB538}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>staticlibtemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;inline=_inline;_USE_MATH_DEFINES;_WIN32_WINNT=0x0600;_LIB;_DEBUG;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;libass;$(SolutionDir)thirdparty\iconv-1.17\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\harfbuzz-1.4.6\src;$(SolutionDir)thirdparty\fribidi-1.0.12-1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;inline=_inline;_USE_MATH_DEFINES;_WIN32_WINNT=0x0600;_LIB;NDEBUG;</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.;libass;$(SolutionDir)thirdparty\iconv-1.17\include;$(SolutionDir)thirdparty\freetype-2.12.1\include;$(SolutionDir)thirdparty\harfbuzz-1.4.6\src;$(SolutionDir)thirdparty\fribidi-1.0.12-1\include;$(SolutionDir)thirdparty\fontconfig-2.12.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

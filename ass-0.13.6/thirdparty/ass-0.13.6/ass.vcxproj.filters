@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libass">
+      <UniqueIdentifier>{8588c327-3efc-42af-865f-c4b131e0411e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libass\x86">
+      <UniqueIdentifier>{eddb8a9e-adf3-4e7d-8c92-2f4086df3838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libass\include">
+      <UniqueIdentifier>{033446dc-aaac-40b2-875a-546f174dd8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libass\src">
+      <UniqueIdentifier>{ce932baa-63c2-4627-82ca-970e512d8277}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libass\x86\cpuid.h">
+      <Filter>libass\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_bitmap.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_cache.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_cache_template.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_compat.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_directwrite.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_drawing.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_font.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_fontconfig.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_fontselect.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_func_template.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_library.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_parse.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_rasterizer.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_render.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_shaper.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_string.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_types.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\ass_utils.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="libass\dwrite_c.h">
+      <Filter>libass\include</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libass\x86\be_blur.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+    <None Include="libass\x86\blend_bitmaps.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+    <None Include="libass\x86\blur.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+    <None Include="libass\x86\cpuid.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+    <None Include="libass\x86\rasterizer.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+    <None Include="libass\x86\utils.asm">
+      <Filter>libass\x86</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libass\ass.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_bitmap.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_blur.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_cache.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_directwrite.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_drawing.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_font.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_fontconfig.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_fontselect.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_library.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_parse.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_rasterizer.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_rasterizer_c.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_render.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_render_api.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_shaper.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_string.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_strtod.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+    <ClCompile Include="libass\ass_utils.c">
+      <Filter>libass\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
